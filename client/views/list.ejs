@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>All Users</title>
+    <style media="screen">
+      th{
+        border: 2px solid black;
+      }
+      td{
+        border: 2px solid black;
+      }
+      .birthday{
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>List of all users</h2>
+    <hr>
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Birthday</th>
+      </tr>
+      <% for (var user of users){ %>
+        <tr>
+          <td><%= user.name['first'] %></td>
+          <td><%= user.name['last'] %></td>
+          <td><%= user.email %></td>
+          <td class="birthday"><%= moment(user.birthday).format('Do MMMM, YYYY'); %></td>
+        </tr>
+      <% } %>
+    </table>
+  </body>
+</html>

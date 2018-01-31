@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login | Register</title>
+  </head>
+  <body>
+    
+    <h2>Register Here</h2>
+    <form class="Register" action="/register" method="post">
+      First Name: <input type="text" name="first_name" value="">
+      Last Name:<input type="text" name="last_name" value="">
+      Password: <input type="password" name="password" value="">
+      Confirm Password: <input type="password" name="password_conf" value="">
+      Email: <input type="text" name="email" value="">
+      Birthday: <input type="date" name="birthday" value="">
+      <input type="submit" name="submitReg" value="Register">
+    </form>
+    <hr>
+    <h2>Login Here</h3>
+    <form class="Login" action="/login" method="post">
+      Email: <input type="text" name="email" value="">
+      Password: <input type="password" name="password" value="">
+      <input type="submit" name="submitLog" value="Login">
+    </form>
+  </body>
+</html>
